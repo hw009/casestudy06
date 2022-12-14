@@ -1,0 +1,166 @@
+:root {
+	--color-neutral-light: #f0ecec;
+	--color-neutral-medium: #9e8d8d;
+	--color-neutral-dark: #392f2f;
+
+	--color-main-light: #bcebff;
+	--color-main-medium: #17a6e2;
+	--color-main-dark: #08435c;
+
+	--color-alt-light: #e5d7fa;
+	--color-alt-medium: #6515e2;
+	--color-alt-dark: #27055c;
+
+	--color-warning: #ea9310;
+	--color-error: #d90c63;
+	--color-purchase: #49ec80;
+}
+
+
+
+body {
+	font-family: macho, sans-serif;
+	background-color: #f9f9f9;
+	padding-bottom: 10em;
+}
+
+.view-window>h2 {
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-30%,-50%);
+	/*background-color: rgba(255,255,255,0.4);*/
+	padding: 1em;
+	border-radius: 0em;
+	color: #F4EBDC;
+	font-size: 3em;
+}
+
+[class*='col-']>.card {
+	height: 100%;
+	margin: 0;
+}
+
+[class*='col-']>.well {
+	height: 100%;
+}
+
+@media (max-width: 600px) {
+	h2 {
+		font-size: 1em;
+	}
+}
+
+a.product-item:hover {
+	text-decoration:  none;
+	transform: scale(1.06);
+}
+
+.product-item {
+	margin: 0;
+	border-radius: 0em;
+	background-color:  #fff;
+	box-shadow: 0px 0px 0px rgba(0,0,0,0.2);
+	padding:  1em;
+	transition: all 0.3s;
+	display: block;
+	height: 100%;
+}
+.product-item:hover {
+	box-shadow: 1px 1px 6px rgba(0,0,0,0.2);
+}
+.product-item figure {
+	margin: 0;
+}
+.product-image img {
+	width: 100%;
+}
+.product-price{
+	font-weight: normal;
+}
+.product-title {
+	font-weight: bold;
+}
+a:hover .product-item {
+	text-decoration: none !important;
+}
+.product-price {
+	font-size: 1.2em;
+	padding: 0.2em 0.4em;
+}
+.product-title {
+	font-size: 0.9em;
+}
+
+.product-image {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 80%;
+}
+.image-main {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 60%;
+}
+.image-main img,
+.product-image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-thumbs img {
+	width:  120px;
+	height: 120px;
+	object-fit: cover;
+}
+.navbar {
+	margin-bottom: 1em;
+}
+.card:first-child,
+.card-section:first-child {
+	margin-top: 0;
+}
+
+
+/* custom for me */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.justify-content-space-evenly  {
+	justify-content: center;
+}
+li {
+	margin-right:  20px;
+}
+li:last-child {
+	margin-right:  0px;
+}
+
+.text-center {
+	text-align:  center;
+}
+
+
+
+span.badge:not(:empty)::after {
+	content: ')';
+}
+span.badge:not(:empty)::before {
+	content: '(';
+}
+
+
+@media (max-width: 600px) {
+	h2 {
+		font-size: 1em;
+	}
+}

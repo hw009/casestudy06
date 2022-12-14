@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Clayroom SF Style Guide</title>
+
+   <link rel="stylesheet" href="https://use.typekit.net/hdl3egf.css">
+
+   <base href="/aau/WebNewMedia/wnm608/wang.henry/m07/">
+
+	<link rel="stylesheet" href="lib/css/styleguide_proposal.css">
+	<link rel="stylesheet" href="lib/css/gridsystem_proposal.css">
+	<link rel="stylesheet" href="css/storetheme_proposal.css">
+</head>
+<body>
+
+
+   <header class="navbar">
+      <div class="container display-flex flex-align-center">
+         <div class="flex-none"><h1>Clayroom SF Styleguide</h1></div>
+      </div>
+   </header>
+
+   <nav class="toc container">
+      <div class="card soft">
+         <h2>Table of Contents</h2>
+         <ul>
+            <li><a href="styleguide/#typography">Typography</a></li>
+            <li><a href="styleguide/#grid">Grid</a></li>
+            <ul>
+               <li><a href="styleguide/#basic-grid">Basic Grid</a></li>
+               <li><a href="styleguide/#complex-grid">Complex Grid</a></li>
+               <li><a href="styleguide/#responsive-grid">Responsive Grid</a></li>
+            </ul>
+            <li><a href="styleguide/#card">Card</a></li>
+            <li><a href="styleguide/#navigations">Navigations</a></li>
+            <li><a href="styleguide/#tables">Tables</a></li> <!-- week 5 -->
+         </ul>
+      </div>
+   </nav>
+
+   <div class="container" id="typography">
+      <h2>Typography</h2>
+      <div class="card soft">
+
+         <!-- code change: move all typography examples to a new div box to display each box horizontally -->
+
+         <div class = "typography">
+         
+            <div class = "well" id = "heading_code">
+               <h3>Heading Code</h3>
+               <code class="well_code">
+
+                  &lt;h1>Heading 1&lt;/h1>
+                  &lt;h2>Heading 2&lt;/h2>
+                  &lt;h3>Heading 3&lt;/h3>
+                  &lt;h4>Heading 4&lt;/h4>
+                  &lt;h5>Heading 5&lt;/h5>
+                  &lt;h6>Heading 6&lt;/h6>
+               </code>
+            </div>
+         
+            <div class="well" id = "heading_example">
+               <h3>Heading Example</h4>
+
+               <!-- h$*6{Heading $} -->
+               <h1>Heading 1</h1>
+               <h2>Heading 2</h2>
+               <h3>Heading 3</h3>
+               <h4>Heading 4</h4>
+               <h5>Heading 5</h5>
+               <h6>Heading 6</h6>
+            </div>
+
+            <div class="well" id = "paragraph_example">
+               <h3>Paragraphs Example</h3>
+
+               <!-- p*3>lorem50 -->
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam est et accusantium commodi recusandae quaerat soluta autem atque, labore odio veniam, molestiae perferendis sunt eos, impedit quae molestias, rem optio amet nihil cupiditate. Laboriosam voluptatem veritatis blanditiis recusandae possimus! Porro quos tenetur magnam vero earum, alias quod obcaecati iusto, voluptate?</p>
+               <p>Modi quasi expedita deleniti autem dicta at minus quo saepe ipsa, exercitationem fugit, molestiae explicabo. Eligendi excepturi in exercitationem officiis, facilis quisquam. Quod, eaque, cupiditate ex dolores quos saepe maxime, dolorem inventore esse perferendis, at dignissimos recusandae quis. Perspiciatis sed ipsa aperiam aspernatur ratione nostrum repellat voluptas ipsum, fugiat illum.</p>
+               <p>Quis assumenda explicabo eius harum modi perspiciatis est consequuntur beatae voluptates. Perspiciatis deleniti at ipsum laborum, et voluptate quas corrupti dolores, placeat nemo sint temporibus facere quis sed inventore, repellat, recusandae quam? Accusamus, laudantium? Necessitatibus dicta laborum mollitia labore facilis qui optio dignissimos. Necessitatibus alias quos dignissimos suscipit natus illum.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="container" id="grid">
+   <h2>Grid</h2>
+      <div class="card soft">
+         <h3 id="basic-grid">Basic Grid</h3>
+
+         <div class="grid">
+            <!-- div.col-6>{Column 6} -->
+            <div class="col-6"><div class="well">Column 6</div></div>
+            <div class="col-6"><div class="well">Column 6</div></div>
+         </div>
+
+         <div class="grid">
+            <div class="col-4"><div class="well">Column 4</div></div>
+            <div class="col-4"><div class="well">Column 4</div></div>
+            <div class="col-4"><div class="well">Column 4</div></div>
+         </div>
+
+         <div class="grid">
+            <div class="col-3"><div class="well">Column 3</div></div>
+            <div class="col-3"><div class="well">Column 3</div></div>
+            <div class="col-3"><div class="well">Column 3</div></div>
+            <div class="col-3"><div class="well">Column 3</div></div>
+         </div>
+
+         <!-- Make sure numbers always add to 12 -->
+         <div class="grid">
+            <div class="col-3"><div class="well">Column 3</div></div>
+            <div class="col-6"><div class="well">Column 6</div></div>
+            <div class="col-3"><div class="well">Column 3</div></div>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <div class="card soft">
+         <div>
+            <h3>Complex Grids</h3>
+         </div>
+
+         <hr>
+         <div class="grid">
+            <div class="col-6"><div class="well">Column 6</div></div>
+            <div class="col-6"><div class="well">Column 6</div></div>
+            <div class="col-3"><div class="well">Column 3</div></div>
+            <div class="col-6"><div class="well">Column 6</div></div>
+            <div class="col-3"><div class="well">Column 3</div></div>
+            <div class="col-12"><div class="well">Column 12</div></div>
+         </div>
+
+         <hr>
+         <div class="grid">
+            <div class="col-6"><div class="well">
+               <div class="grid">
+                  <div class="col-3"><div class="well">3</div></div>
+                  <div class="col-3"><div class="well">3</div></div>
+                  <div class="col-3"><div class="well">3</div></div>
+                  <div class="col-3"><div class="well">3</div></div>
+               </div>
+            </div></div>
+            <div class="col-6"><div class="well">
+               <div class="grid">
+                  <div class="col-4"><div class="well">4</div></div>
+                  <div class="col-4"><div class="well">4</div></div>
+                  <div class="col-4"><div class="well">4</div></div>
+               </div>               
+            </div></div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="container">
+      <div class="card soft">
+         <div>
+            <h3>Responsive Grids</h3>
+         </div>
+
+         <div class="grid">
+            <div class="col-xs-12 col-md-6">
+               <div class="well">Col 6</div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+               <div class="well">Col 6</div>
+            </div>
+         </div>
+
+         <hr>
+         <div class="grid gap">
+            <div class="col-xs-6 col-md-3">
+               <div class="well">Col 6</div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <div class="well">Col 6</div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <div class="well">Col 6</div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <div class="well">Col 6</div>
+            </div>
+         </div>
+         <hr>
+
+         <div class="grid gap large">
+            <div class="col-xs-8 col-md-4 col-xl-12">
+               <div class="well">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, amet qui molestiae fugiat ut laboriosam porro ad vero deserunt fuga, velit, vitae pariatur ipsam facere quis, totam odit dolor? Veniam perferendis aliquid dignissimos vel optio laborum non, repudiandae aliquam laboriosam saepe, ad dolore necessitatibus tempora delectus corrupti praesentium ipsam repellat?</div>
+            </div>
+            <div class="col-xs-4 col-md-4 col-xl-6">
+               <div class="well">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nesciunt commodi perspiciatis unde soluta ullam, libero assumenda quisquam quia, repudiandae expedita excepturi ea molestiae recusandae deleniti architecto, exercitationem veniam totam consequuntur eum corrupti. Fuga qui corporis nesciunt odio voluptatibus sed est? Alias, modi. Eos laboriosam et, esse ipsa dignissimos, nulla.</div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-xl-6">
+               <div class="well">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, nobis fugiat, rem velit nulla veniam modi voluptates. Quos accusamus laudantium nihil rerum suscipit reprehenderit minima nam ducimus eaque eum. Quos animi ad sapiente earum. Nulla at veritatis dolore reiciendis aut. Corrupti nam dolor cumque commodi voluptates rem dignissimos iste distinctio.</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <div class="container">
+      <div class="card soft">
+         <div>
+            <h3>Layout</h3>
+         </div>
+      </div>
+
+      <div>
+         <h3>Title</h3>
+      </div>
+      <div class="grid gap">
+         <!-- .col-xs-12.col-md-4*3>.card.soft>{Item $} -->
+         <div class="col-xs-12 col-md-4">
+            <div class="card soft"><h3>Item 1</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <div class="card soft"><h3>Item 2</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-4">
+            <div class="card soft"><h3>Item 3</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+   <div class="container" id="card">
+      <h2>Card</h2>
+
+      <div class="well">
+
+      <h3>Basic Card</h3>
+
+      <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
+
+      <h3>Soft Card</h3>
+
+      <div class="card soft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
+
+      <h3>Hard Card</h3>
+
+      <div class="card hard">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
+
+      <h3>Medium Card</h3>
+
+      <div class="card medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
+
+      <h3>Dark Card</h3>
+
+      <div class="card dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
+
+      <h3>Rainbow Card</h3>
+
+      <div class="card rainbow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe iste quae quod mollitia quaerat sunt, eaque in aut autem aliquid exercitationem natus atque iusto vero reprehenderit? Ipsa, omnis sed?</div>
+   </div>
+   </div>
+
+
+   <div class="container">
+      <h2>View Window</h2>
+
+      <div class="view-window" style="background-image:url(../img/clay_10.jpg)"></div>
+   </div>
+
+
+   <div class="container" id="navigations">
+      <h2>Navigations</h2>
+
+      <script>
+      const makeNav = (classes='') => {
+         const links = ['home','store','about','cart'];
+         document.write(`
+         <div>
+         <nav class="${classes}">
+            <ul>
+               ${links.reduce((r,o,i)=>r+`<li><a href="#">${o}</a></li>`,'')}
+            </ul>
+         </nav>
+         </div>
+         `)
+      }
+      </script>
+
+      <div class="card soft">
+         <h3>Basic Nav</h3>
+
+         <!-- nav.nav>ul>li*4>a[href=#]{Link $} -->
+         <!-- <nav class="nav">
+            <ul>
+               <li><a href="#">Link 1</a></li>
+               <li><a href="#">Link 2</a></li>
+               <li><a href="#">Link 3</a></li>
+               <li><a href="#">Link 4</a></li>
+            </ul>
+         </nav> -->
+         <div class="grid">
+            <div class="col-xs-4">
+               <script>makeNav('nav')</script>
+            </div>
+            <div class="col-xs-8"></div>
+         </div>
+
+
+      </div>
+
+      <div class="card soft">
+         <h3>Flex Nav</h3>
+         <script>makeNav('nav flex')</script>
+      </div>
+
+      <div class="card soft">
+         <h3>Stretch Nav</h3>
+         <script>makeNav('nav stretch')</script>
+      </div>
+
+      <div class="card soft">
+         <h3>Pills Nav</h3>
+         <script>makeNav('nav pills')</script>
+      </div>
+
+      <div class="card soft">
+         <h3>Breadcrumb Nav</h3>
+         <script>makeNav('nav crumbs')</script>
+      </div>
+   </div>
+
+<!-- week 5 -->
+
+   <script>
+   const makeTable = (classes='') => {
+      const head = ['ID','Office','Name','Email','Phone'];
+      const body = [
+         ['522',"Hamilton Cline",'hcline@academyart.edu','555-2424'],
+         ['512',"Fred McHale",'fmchale@academyart.edu','555-2424'],
+         ['522',"Michael Catanzaro",'mcatanzaro@academyart.edu','555-2424'],
+         ['514',"Andrea Pimentel",'apimentel@academyart.edu','555-2424'],
+         ['516',"DC Scarpelli",'dscarpelli@academyart.edu','555-2424'],
+      ];
+
+      document.write(`
+      <table class="${classes}">
+         <thead><tr>${head.reduce((r,o)=>r+`<th>${o}</th>`,'')}</tr></thead>
+         <tbody>
+            ${body.reduce((r,o,i)=>r+
+               `<tr>${[i+1,...o].reduce((r,o)=>r+`<td>${o}</td>`,'')}</tr>`
+            ,'')}
+         </tbody>
+      </table>
+      `)
+   }
+   </script>
+
+
+   <div class="container" id="tables">
+      <h2>Tables</h2>
+
+      <div class="card soft">
+         <h3>Basic Table</h3>
+
+         <script>makeTable('table')</script>
+      </div>
+
+      <div class="card soft">
+         <h3>Striped Table</h3>
+
+         <script>makeTable('table striped')</script>
+      </div>
+
+      <div class="card soft">
+         <h3>Lined Horizontal</h3>
+
+         <script>makeTable('table lined horizontal')</script>
+      </div>
+
+      <div class="card soft">
+         <h3>Lined Vertical</h3>
+
+         <script>makeTable('table lined vertical')</script>
+      </div>
+
+      <div class="card soft">
+         <h3>Lined Border</h3>
+
+         <script>makeTable('table lined border')</script>
+      </div>
+
+      <div class="card soft">
+         <h3>Lined Every</h3>
+
+         <script>makeTable('table lined border vertical horizontal')</script>
+      </div>
+
+      <div class="card soft">
+         <h3>Lined All</h3>
+
+         <script>makeTable('table lined all striped')</script>
+      </div>
+
+   </div>
+
+
+   <div class="container">
+      <h2>Forms</h2>
+
+      <div class="card soft">
+         <h3>Basic Input</h3>
+
+         <form>
+            <input type="text" placeholder="Text" class="form-input">
+            <input type="number" placeholder="Number" class="form-input">
+            <input type="search" placeholder="Search" class="form-input">
+            <input type="password" placeholder="Password" class="form-input">
+         </form>
+
+         <h3>Form Label &amp; Control</h3>
+         <form>
+            <div class="form-control">
+               <label for="example-1" class="form-label">Example</label>
+               <input id="example-1" type="text" placeholder="Text" class="form-input">
+            </div>
+            <div class="form-control">
+               <label for="example-2" class="form-label">Example</label>
+               <input id="example-2" type="text" placeholder="Text" class="form-input">
+            </div>
+            <div class="form-control">
+               <label for="example-3" class="form-label">Example</label>
+               <input id="example-3" type="text" placeholder="Text" class="form-input">
+            </div>
+            <div class="display-flex flex-align-center">
+               <div class="flex-none">
+                  <label for="example-search" class="form-label">Search</label>
+               </div>
+               <div class="flex-stretch">
+                  <input id="example-search" type="search" placeholder="Text" class="form-input">
+               </div>
+               <div class="flex-none">
+                  <label for="example-search" class="form-label">Search</label>
+               </div>
+               <div class="flex-stretch">
+                  <input id="example-search" type="search" placeholder="Text" class="form-input">
+               </div>
+            </div>
+         </form>
+
+         <h3>Buttons</h3>
+
+         <div class="form-control">
+            <button type="button" class="form-button">Button</button>
+         </div>
+         <div class="form-control">
+            <input type="button" class="form-button" value="Button">
+         </div>
+         <div class="form-control">
+            <div class="display-flex flex-align-center">
+               <div class="flex-stretch">Choose on the right</div>
+               <div class="flex-none"><a href="#" class="form-button">Button</a></div>
+            </div>
+         </div>
+         <div class="form-control">
+            <a href="#" class="btn sell">Button</a>
+         </div>
+         <div class="form-control">
+            <a href="#" class="btn inline">Button</a>
+            <a href="#" class="btn inline">Button</a>
+         </div>
+
+         <h3>Hotdog</h3>
+
+         <div class="hotdog">hotdog</div>
+
+         <form>
+            <input type="search" class="hotdog dark">
+         </form>
+         <form>
+            <div class="form-control">
+               <div class="hotdog">
+                  <img src="img/email.jpg" alt="" class="icon">
+                  <input type="text" id="example-email">
+               </div>
+            </div>
+
+            <div class="form-control">
+               <div class="hotdog">
+                  <input type="password" id="example-password">
+                  <img src="img/password.png" alt="" class="icon">
+               </div>
+            </div>
+         </form>
+
+
+         <h3>Select</h3>
+
+         <div class="grid">
+            <div class="col-xs-12 col-md-8">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fugiat delectus aliquid, voluptatum et, molestias deleniti ad asperiores. Laborum, adipisci. Libero tempora quaerat et quam iusto veritatis, aspernatur aliquid fuga obcaecati enim, nobis quod quidem voluptatibus. Omnis vel sed repellat.</p>
+               <p>Pariatur sit officia incidunt, officiis, dicta nemo debitis rerum asperiores ratione accusantium fugit dolorum. Dolores saepe ducimus dolorum sed rerum molestiae ipsam delectus quae nihil quibusdam. Vel praesentium, magnam id dignissimos necessitatibus repellendus ullam mollitia vitae iusto illo doloremque culpa!</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+
+               <div class="form-select">
+                  <select>
+                     <option>Option 1</option>
+                     <option>Option 2</option>
+                     <option>Option 3</option>
+                  </select>
+               </div>
+            </div>
+         </div>
+
+         <h3>Checkbox</h3>
+
+         <div class="form-control">
+            <label> Text
+               <input type="checkbox">
+            </label>
+         </div>
+         <div class="form-control">
+            <input type="checkbox" id="check-example">
+            <label for="check-example">Text</label>
+         </div>
+
+         <!-- Checkbox Trick -->
+         <div class="toggle">
+            <input type="checkbox" id="toggle-1" class="hidden">
+            <label for="toggle-1"></label>
+         </div>
+         <div class="toggle" style="font-size:2em">
+            <input type="checkbox" id="toggle-2" class="hidden">
+            <label for="toggle-2"></label>
+         </div>
+      </div>
+
+   </div>
+
+
+
+   <div class="container">
+      <h2>Products</h2>
+
+      <div class="well">
+         <h3>Figure</h3>
+         <figure>
+            <img class="product-image-type-a" src="../img/clay_01.jpg" alt="">
+            <figcaption>This is an image</figcaption>
+         </figure>
+
+
+         <h3>Product Figure</h3>
+         <div class="grid gap">
+            <div class="col-xs-12 col-md-4">
+               <figure class="product-item">
+                  <div class="product-image">
+                     <img class="product-image-type-b" src="../img/clay_03.jpg" alt="">
+                  </div>
+                  <figcaption class="product-description">
+                     <div class="product-price">&dollar;325.00</div>
+                     <div class="product-title">Advanced Slipping Class</div>
+                  </figcaption>
+               </figure>
+            </div>
+            <div class="col-xs-12 col-md-8">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos voluptate at, ipsam reiciendis sed magni perspiciatis, exercitationem sit incidunt aspernatur dolorum ullam, commodi? Similique vel, laborum magni architecto dolore nostrum animi, voluptate corrupti enim. Minima mollitia maxime quo repudiandae.</p>
+               <p>Reiciendis corrupti ipsum harum minus quam, velit nobis ducimus voluptatem temporibus neque dolorum officiis inventore? Optio iure doloremque voluptatibus animi impedit tenetur rerum ipsam. Cupiditate repellendus inventore sit aut odio alias iste, nostrum, molestiae? Accusamus rerum minus sed molestias cum.</p>
+            </div>
+         </div>
+
+         <h3>Product Grid</h3>
+
+         <div class="grid gap">
+            <div class="col-xs-12 col-md-4">
+               <a href="#">
+                  <figure class="product-item">
+                     <div class="product-image">
+                        <img src="../img/clay_04.jpg" alt="">
+                     </div>
+                     <figcaption class="product-description">
+                        <div class="product-price">&dollar;285.00</div>
+                        <div class="product-title">Advanced Throwing Class</div>
+                     </figcaption>
+                  </figure>
+               </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <a href="#" class="display-block">
+                  <figure class="product-item">
+                     <div class="product-image">
+                        <img src="../img/clay_05.jpg" alt="">
+                     </div>
+                     <figcaption class="product-description">
+                        <div class="product-price">&dollar;315.00</div>
+                        <div class="product-title">Intro to Slipping Class</div>
+                     </figcaption>
+                  </figure>
+               </a>
+            </div>
+            <div class="col-xs-12 col-md-4">
+               <a href="#">
+                  <figure class="product-item">
+                     <div class="product-image">
+                        <img src="../img/clay_07.jpg" alt="">
+                     </div>
+                     <figcaption class="product-description">
+                        <div class="product-price">&dollar;240.00</div>
+                        <div class="product-title">Intro to Clay Class</div>
+                     </figcaption>
+                  </figure>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<!-- week 5 -->
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+   {
+      "name":"Henry Wang",
+      "type":"Student",
+      "email":"hwang73@art.edu",
+      "classes":[608]
+   },
+   {
+      "name":"Chandler Bing",
+      "type":"who knows",
+      "email":"chandler@aol.com",
+      "classes":[601,608,618]
+   },
+   {
+      "name":"Joey Tribbiani",
+      "type":"actor",
+      "email":"joey@aol.com",
+      "classes":[601,608,618]
+   },
+   {
+      "name":"Ross Geller",
+      "type":"dinosaur guy",
+      "email":"ross@aol.com",
+      "classes":[601,608,618]
+   }
+
+]
